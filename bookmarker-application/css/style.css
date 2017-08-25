@@ -1,0 +1,44 @@
+body {
+	background-image: url(../img/background.jpg);
+}
+h2 {
+	text-align: center;
+	margin-bottom: 25px;
+}
+h3 {
+	text-align: center;
+	color: white;
+	margin: 100px auto 25px auto;
+}
+.jumbotron {
+	background-color: rgb(255,255,255);
+	box-shadow: 0 0 2em rgba(0,0,0,0.2);
+	width: 500px;
+	margin: 0 auto;
+	margin-bottom: 25px;
+}
+label {
+	width: 90px;
+	text-align: left;
+	font-size: 20px;
+}
+input {
+	border-radius:0.25em;
+	border: 1px solid #ccc;
+	font-size: 20px;
+	padding-left: 10px;
+}
+.btn {
+	background-color: #67526B;
+	color: white;
+}
+.btn:hover {
+	background-color: #423545;
+}
+a:hover {
+	color: white;
+	background-color: #423545;
+}
+.list {
+	margin: 10px;
+}
