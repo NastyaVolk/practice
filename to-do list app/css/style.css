@@ -1,0 +1,47 @@
+/* #BA526D dark */
+/* #472E3E  the darkest */
+/* #DEDADC  grey */
+header {
+	width: 100%;
+	height: 130px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	background-color: #D4B7BC;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	box-shadow: 0px 2px 4px rgba(44,62,80,0.15);
+}
+header input {
+	width: 80%;
+	height: 50px;
+	padding: 0 20px 0 20px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 400;
+	background-color: #D4B7BC;
+	border: 0px;
+	box-shadow: none;
+	outline: none;
+	text-align: center;
+}
+header button {
+	width: 50px;
+	height: 50px;
+	z-index: 2;
+	border-radius: 25px;
+	background: #fff;
+	border:0px;
+	box-shadow: none;
+	outline: none;
+	margin: auto;
+	font-size: 20px;
+	color: #ccc;
+	margin-bottom: 5px;
+}
+::-webkit-input-placeholder {
+	color: rgba(255,255,255,0.8);
+}
