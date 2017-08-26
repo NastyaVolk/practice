@@ -9,6 +9,32 @@ if (value) {
 }
 });
 
+function removeItem() {
+var item = this.parentNode.parentNode;
+var parent = item.parentNode;
+parent.removeChild(item); 
+}
+
+function completeItem() {
+	var item = this.parentNode.parentNode;
+	var parent = item.parentNode;
+	var id = parent.id;
+
+	
+
+	if (id ==='todo') {
+		//It is a todo item to be complete
+	target = document.getElementById('completed');
+	}
+	else {
+		// It is a completed item to be re-done
+	target = document.getElementById('todo');
+	}
+	parent.removeChild(item); 
+	target.insertBefore(item, target.childNodes[0]);
+}
+
+
 //Adds a new item to the todo list
 function addItemTodo(text) {
 var list = document.getElementById('todo');
@@ -23,9 +49,17 @@ var remove = document.createElement('button');
 remove.classList.add('remove');
 remove.innerHTML = removeSVG;
 
+//Add click event for removing the item
+remove.addEventListener('click', removeItem);
+
+
+
 var complete = document.createElement('button');
 complete.classList.add('coplete');
 complete.innerHTML = completeSVG;
+
+//Add click event for comleting the item
+complete.addEventListener('click', completeItem);
 
 buttons.appendChild(remove);
 buttons.appendChild(complete);

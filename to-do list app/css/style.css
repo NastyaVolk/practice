@@ -117,3 +117,14 @@ fill: #472E3E;
 button svg .fill {
 	transition: 0.6s ease;
 }
+ul.todo#completed:not(:empty) {
+	opacity: 0.5;
+	padding-top: 20px;
+	border-top: 0.7px solid;
+	border-top-color: rgba(186,186,186,1); 
+}
+/*ul.todo #completed:not(:empty):before {
+	content: '';
+	background-color: #472E3E;
+	height: 1px;
+}*/
