@@ -114,3 +114,6 @@ fill: #472E3E;
 button.remove:hover svg .fill {
 fill: #472E3E;
 }
+button svg .fill {
+	transition: 0.6s ease;
+}
